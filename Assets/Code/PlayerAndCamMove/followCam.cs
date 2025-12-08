@@ -4,7 +4,7 @@ public class followCam : MonoBehaviour
 {
     [SerializeField] private Transform player;
     public float sensetivity = 250f;
-    public float xRotation = 0;
+    private float xRotation = 0;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
