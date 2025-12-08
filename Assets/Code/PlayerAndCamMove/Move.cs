@@ -3,13 +3,14 @@ using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float gravity = 5f;
+    [SerializeField] private float speed = 6f;
+    [SerializeField] private float gravity = 15f;
     [SerializeField] private float verticalVelocity;
     public CharacterController controller;
+    Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -17,9 +18,11 @@ public class Move : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
         Vector3 moveXZ = (transform.forward * moveZ) + (transform.right * moveX);
-        if(controller.isGrounded == true)
+        moveXZ.x = moveXZ.x * speed;
+        moveXZ.z = moveXZ.z * speed;
+        if (controller.isGrounded == true)
         {
-            verticalVelocity = -1f;
+            verticalVelocity = -2f;
         }
         else
         {
@@ -28,5 +31,7 @@ public class Move : MonoBehaviour
         Vector3 fall = new Vector3(0, verticalVelocity, 0);
         Vector3 moveControll = (moveXZ + fall) * Time.deltaTime;
         controller.Move(moveControll);
+        bool iWalk = moveXZ.magnitude > 0.1f;
+        animator.SetBool("iWalk", iWalk);
     }
 }
