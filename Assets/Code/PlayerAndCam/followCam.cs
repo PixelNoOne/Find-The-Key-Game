@@ -3,7 +3,7 @@ using UnityEngine;
 public class followCam : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    public float sensetivity = 250f;
+    public float sensetivity = 1f;
     private float xRotation = 0;
     void Start()
     {
@@ -11,8 +11,8 @@ public class followCam : MonoBehaviour
     }
     public void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensetivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sensetivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * sensetivity;
+        float mouseY = Input.GetAxis("Mouse Y") * sensetivity;
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -75f, 75f);
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);

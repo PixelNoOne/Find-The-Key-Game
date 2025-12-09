@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3024687a285c71b41afb77ff3a5ebb96, type: 3}
+  m_Name: Seed
+  m_EditorClassIdentifier: Assembly-CSharp::SeedData
+  Seed: {fileID: 11400000, guid: 9e50b8811b2020b4cb2ffe94fab7110b, type: 2}
+  growthStage:
+  - {fileID: 919132149155446097, guid: 8ad675958c0dfef47804f8acab7995dd, type: 3}
+  - {fileID: 8402198503640874497, guid: 9a887376e9ce9b9409689f62745884bc, type: 3}
+  - {fileID: 7496123326236015823, guid: 1bdc4215908ecd24f8c7050ab2e2ee15, type: 3}
+  growthStageTime:
+  - 10
+  - 20
+  - 0

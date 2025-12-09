@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6418017784025449
+--- !u!1001 &6256247743569115186
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.469087
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.917
+      value: 3.862
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.383
+      value: 1.275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50,61 +50,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
       propertyPath: m_Name
-      value: Seed 1
+      value: SeedHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1508295197539428813}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7420170125649321521}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
---- !u!1 &925389628442209336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f5d441922a8eea4ca8f9ce9cd7e1d2d, type: 3}
-  m_PrefabInstance: {fileID: 6418017784025449}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1508295197539428813
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925389628442209336}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.036624547
-  m_Height: 0.123514965
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.0000000018626451, z: -9.313226e-10}
---- !u!114 &7420170125649321521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925389628442209336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba28e1c27cca6e143a182cfe85160fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WorldItem
-  data: {fileID: 0}
-  youCanTakeMe: 0
-  myDistance: 0
-  player: {fileID: 0}
-  goTakeMe: 0

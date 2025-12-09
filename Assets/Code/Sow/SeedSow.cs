@@ -20,7 +20,10 @@ public class SeedSow : MonoBehaviour
         while(growthAndGrowthTaimStage <= seedData.growthStage.Length - 1)
         {
             yield return new WaitForSeconds(seedData.growthStageTime[growthAndGrowthTaimStage]);
-            Destroy(stage);
+            if (growthAndGrowthTaimStage < seedData.growthStage.Length - 1)
+            {
+                Destroy(stage);
+            }
             growthAndGrowthTaimStage++;
             stage = Instantiate(seedData.growthStage[growthAndGrowthTaimStage]);
             stage.transform.position = transform.position;
