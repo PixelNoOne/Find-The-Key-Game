@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Seed
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   ItemName: Seed
-  icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: d5c9d209260350a4ab707934dae3601b, type: 3}
   handPrefab: {fileID: 6490744780783060323, guid: 662c6c574ff0e4d40b2bf1ff116627ae, type: 3}
   seedData: {fileID: 11400000, guid: dc85a055756734845a24ff2e5a4dffff, type: 2}
   worldRefence: {fileID: 0}
