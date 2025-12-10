@@ -16,8 +16,8 @@ MonoBehaviour:
   - you need open all furniture
   - sow seed in pot on table
   - please wait all sow stage
-  - please wait all sow stage
-  - take a key and you can go, you now where is door
-  QuestKey: 0101010000
+  - take a key
+  - you can go, you now where is door
+  QuestKey: 0101010100
   rewardText: Congrats you can take your reward now
   itemReward: {fileID: 11400000, guid: 9e50b8811b2020b4cb2ffe94fab7110b, type: 2}

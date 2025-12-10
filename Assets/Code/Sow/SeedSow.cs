@@ -9,6 +9,7 @@ public class SeedSow : MonoBehaviour
     public ItemData item;
     public GameObject stage;
     public event Action WhenIGrow;
+    public event Action StagePlus;
     public int growthAndGrowthTaimStage = 0;
 
     void Start()

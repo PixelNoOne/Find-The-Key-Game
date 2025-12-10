@@ -6,7 +6,8 @@ public class QuestsManager : MonoBehaviour
     public PlayerInputSystem player;
     public PlayerPocket playerP;
     public ItemData item;
-    public SowManager sow;
+    [SerializeField] private SowManager sow;
+    public SeedSow seedSow;
     public QuestData data;
     public GameObject pot;
     public GameObject placeToPot;
@@ -19,11 +20,15 @@ public class QuestsManager : MonoBehaviour
     public event Action onFirstQuestFinished;
     public bool iCantFindExit = true;
 
-    void Start()
+    void Awake()
     {
+        sow.iCreatedSeedSow += isSeedCreated;
         player.whenIOpen += ITakeInt;
         sow.onSowed += Sowed;
         playerP.onItemPickUp += keyPickUp;
+    }
+    void Start()
+    {
         onQuestStarted?.Invoke(data.Quests[index]);
         onRewardProgress?.Invoke(progressCount, finallCount);
     }
@@ -52,6 +57,17 @@ public class QuestsManager : MonoBehaviour
         index++;
         onQuestStarted?.Invoke(data.Quests[index]);
     }
+    public void isSeedCreated(SeedSow sow)
+    {
+        seedSow = sow;
+        seedSow.WhenIGrow += WhenSowed;
+    }
+    public void WhenSowed()
+    {
+        data.QuestKey[index] = true;
+        index++;
+        onQuestStarted?.Invoke(data.Quests[index]);
+    }
     public void keyPickUp(ItemData items)
     {
         if (item == items)
@@ -59,6 +75,7 @@ public class QuestsManager : MonoBehaviour
             data.QuestKey[index] = true;
             iCantFindExit = false;
             index++;
+            onQuestStarted?.Invoke(data.Quests[index]);
         }
         else
         {
