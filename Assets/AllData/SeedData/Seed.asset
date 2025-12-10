@@ -18,6 +18,6 @@ MonoBehaviour:
   - {fileID: 8402198503640874497, guid: 9a887376e9ce9b9409689f62745884bc, type: 3}
   - {fileID: 7496123326236015823, guid: 1bdc4215908ecd24f8c7050ab2e2ee15, type: 3}
   growthStageTime:
+  - 5
   - 10
-  - 20
   - 0
