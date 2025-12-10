@@ -506,7 +506,7 @@ MonoBehaviour:
   PotData: {fileID: 0}
   player: {fileID: 791211473}
   playerP: {fileID: 791211475}
-  SeedSow: {fileID: 0}
+  seedSow: {fileID: 0}
   seedIsSowed: 0
 --- !u!4 &207328001
 Transform:
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   sow: {fileID: 207328000}
   data: {fileID: 11400000, guid: de15f900894b0f344ab892475e7edf79, type: 2}
   pot: {fileID: 1729568993151567619, guid: 06e96b0f29bc7964396b2acd94e0b09f, type: 3}
-  placeToPot: {fileID: 0}
+  placeToPot: {fileID: 155521285}
   worldPot: {fileID: 0}
   progressCount: 0
   finallCount: 13
@@ -2235,6 +2235,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499447576}
   m_CullTransparentMesh: 1
+--- !u!1 &1519602187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519602189}
+  - component: {fileID: 1519602188}
+  m_Layer: 0
+  m_Name: SpawnKey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1519602188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519602187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6900aa5ab122f54c8edb7d06e91a3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnKey
+  player: {fileID: 791211473}
+  sow: {fileID: 207328000}
+  worldItem: {fileID: 0}
+  key: {fileID: 5285939160353664304, guid: fc2ab105df9710b4e8afa7473d67d047, type: 3}
+--- !u!4 &1519602189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519602187}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.82907, y: 2.8526, z: 8.98542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537016670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6825541231168221655, guid: eb96fc68f331cb94ea7b29b1b18b0d8b, type: 3}
@@ -3769,3 +3817,4 @@ SceneRoots:
   - {fileID: 995336350}
   - {fileID: 114239662}
   - {fileID: 976750256}
+  - {fileID: 1519602189}

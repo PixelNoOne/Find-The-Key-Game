@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.093731
+      value: -5.485
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.039
+      value: 4.038
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.7850337
+      value: 5.655
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9af6990945711df4c83cd0c5a473f8cc, type: 3}
       propertyPath: m_Name
-      value: Key 1
+      value: Key
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba28e1c27cca6e143a182cfe85160fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldItem
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 82d7917ade3bf054e9de453d9713b3a9, type: 2}
   youCanTakeMe: 1
   myDistance: 0
   player: {fileID: 0}
