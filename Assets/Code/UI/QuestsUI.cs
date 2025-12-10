@@ -1,8 +1,10 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestsUI : MonoBehaviour
 {
+    public Image progressBar;
     public TMP_Text text;
     public TMP_Text progressStatus;
     public QuestsManager Quests;
@@ -20,9 +22,11 @@ public class QuestsUI : MonoBehaviour
     public void RewardTake(int progressCount,int finallCount)
     {
         progressStatus.text = new string($"{progressCount}/{finallCount}");
+        progressBar.enabled = true;
     }
     public void OffText()
     {
         progressStatus.enabled = false;
+        progressBar.enabled = false;
     }
 }
