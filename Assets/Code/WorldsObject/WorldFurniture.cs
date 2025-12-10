@@ -23,7 +23,6 @@ public class WorldFurniture : MonoBehaviour
             if (myDistance <= player.distanceToTake)
             {
                 youCanOpen = true;
-                Debug.Log("да");
             }
             else
             {

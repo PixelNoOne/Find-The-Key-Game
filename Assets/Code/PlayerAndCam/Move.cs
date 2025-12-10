@@ -7,7 +7,9 @@ public class Move : MonoBehaviour
     [SerializeField] private float gravity = 15f;
     [SerializeField] private float verticalVelocity;
     public CharacterController controller;
+    public RewardUi reward;
     Animator animator;
+    public bool iCantWork = false;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -15,23 +17,27 @@ public class Move : MonoBehaviour
 
     void Update()
     {
+        iCantWork = reward.rewardWindowOpen;
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
-        Vector3 moveXZ = (transform.forward * moveZ) + (transform.right * moveX);
-        moveXZ.x = moveXZ.x * speed;
-        moveXZ.z = moveXZ.z * speed;
-        if (controller.isGrounded == true)
+        if (!iCantWork)
         {
-            verticalVelocity = -2f;
+            Vector3 moveXZ = (transform.forward * moveZ) + (transform.right * moveX);
+            moveXZ.x = moveXZ.x * speed;
+            moveXZ.z = moveXZ.z * speed;
+            if (controller.isGrounded == true)
+            {
+                verticalVelocity = -2f;
+            }
+            else
+            {
+                verticalVelocity -= gravity * Time.deltaTime;
+            }
+            Vector3 fall = new Vector3(0, verticalVelocity, 0);
+            Vector3 moveControll = (moveXZ + fall) * Time.deltaTime;
+            controller.Move(moveControll);
+            bool iWalk = moveXZ.magnitude > 0.1f;
+            animator.SetBool("iWalk", iWalk);
         }
-        else
-        {
-            verticalVelocity -= gravity * Time.deltaTime;
-        }
-        Vector3 fall = new Vector3(0, verticalVelocity, 0);
-        Vector3 moveControll = (moveXZ + fall) * Time.deltaTime;
-        controller.Move(moveControll);
-        bool iWalk = moveXZ.magnitude > 0.1f;
-        animator.SetBool("iWalk", iWalk);
     }
 }

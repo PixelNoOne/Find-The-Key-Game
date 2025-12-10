@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerInputSystem : MonoBehaviour
 {
     public PlayerPocket playerP;
+    public RewardUi reward;
     public Transform hand;
     public float distanceToTake = 7f;
     public float rayLength = 7f;
@@ -11,17 +12,20 @@ public class PlayerInputSystem : MonoBehaviour
     public WorldFurniture furnitureINeedRemember;
     public GameObject pot;
     public WorldPot potINeedRemember;
+    private ItemData onClickItem;
     public GameObject item;
     public WorldItem itemINeedRemember;
     public event Action Interact;
     public event Action<ItemData, GameObject> onSow;
-    public event Action<WorldItem> onItemTake;
+    public event Action<ItemData> onItemTake;
+    public event Action<int> whenIOpen;
     public bool isLookingBox;
     public bool isLookingPot;
     public bool isLookingItem;
+    public int howMuchBoxIOpen = 0;
     void Start()
     {
-
+        reward.onClickDo += OnClickDo;
     }
     private void Update()
     {
@@ -56,17 +60,24 @@ public class PlayerInputSystem : MonoBehaviour
                 isLookingItem = true;
             }
         }
-        if(pressedE && isLookingBox)
+        if (pressedE && isLookingBox && furnitureINeedRemember != null && furnitureINeedRemember.imNotOpenYet == true)
         {
             Interact?.Invoke();
+            howMuchBoxIOpen++;
+            whenIOpen?.Invoke(howMuchBoxIOpen);
         }
         if (pressedE && isLookingItem && item != null)
         {
-            onItemTake?.Invoke(itemINeedRemember);
+            onItemTake?.Invoke(itemINeedRemember.data);
         }
-        if (pressedE && potINeedRemember.youCanWorkWithMe == true)
+        if (pressedE && potINeedRemember != null && potINeedRemember.youCanWorkWithMe == true)
         {
             onSow?.Invoke(playerP.itemData, pot);
         }
+    }
+    public void OnClickDo(ItemData items)
+    {
+        onClickItem = items;
+        onItemTake?.Invoke(onClickItem);
     }
 }

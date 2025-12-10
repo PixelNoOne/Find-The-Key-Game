@@ -7,6 +7,7 @@ public class SeedSow : MonoBehaviour
     public SeedData seedData;
     public ItemData item;
     public GameObject stage;
+    [SerializeField] private GameObject key;
     public int growthAndGrowthTaimStage = 0;
 
     void Start()

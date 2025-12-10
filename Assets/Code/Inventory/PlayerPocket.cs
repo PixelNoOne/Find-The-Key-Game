@@ -22,16 +22,16 @@ public class PlayerPocket : MonoBehaviour
         }
         animator.SetBool("itemInHand",itemInHand != null);
     }
-    void pickUpItem(WorldItem item)
+    void pickUpItem(ItemData item)
     {
-        if (item != null && item.data != null)
+        if (item != null)
         {
-            itemData = item.data;
-            itemInHand = Instantiate(item.data.handPrefab);
+            itemData = item;
+            itemInHand = Instantiate(item.handPrefab);
             itemInHand.transform.SetParent(player.hand);
             itemInHand.transform.localPosition = new Vector3(0.1f, 0.4f, 0.2f);
             itemInHand.transform.localRotation = Quaternion.Euler(250, 0, 0);
-            onItemPickUp?.Invoke(item.data);
+            onItemPickUp?.Invoke(item);
             Destroy(player.item);
         }
         else

@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +10,8 @@ public class SowManager : MonoBehaviour
     public PlayerInputSystem player;
     public PlayerPocket playerP;
     public SeedSow SeedSow;
+    public bool seedIsSowed = false;
+    public event Action<bool> onSowed;
     
     void Start()
     {
@@ -24,6 +28,8 @@ public class SowManager : MonoBehaviour
             SeedSow.seedData = item.seedData;
             Destroy(playerP.itemInHand);
             playerP.itemInHand = null;
+            seedIsSowed = true;
+            onSowed?.Invoke(seedIsSowed);
         }
     }
 }
