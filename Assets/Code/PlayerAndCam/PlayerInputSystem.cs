@@ -68,7 +68,10 @@ public class PlayerInputSystem : MonoBehaviour
             {
                 pot = hit.collider.gameObject;
                 potINeedRemember = pot.GetComponent<WorldPot>();
-                isLookingPot = true;
+                if (pot != null && potINeedRemember != null)
+                {
+                    isLookingPot = true;
+                }
             }
             if (hit.collider.GetComponent<WorldItem>())
             {

@@ -14,7 +14,7 @@ public class SowManager : MonoBehaviour
     public event Action<bool> onSowed;
     public event Action<SeedSow> iCreatedSeedSow;
     
-    void Awake()
+    void Start()
     {
         player.onSow += Interact;
     }
