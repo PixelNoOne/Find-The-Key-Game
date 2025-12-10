@@ -29,7 +29,7 @@ public class PlayerInputSystem : MonoBehaviour
     public bool isLookingItem;
     public bool iSeeExit;
     public int howMuchBoxIOpen = 0;
-    void Start()
+    void Awake()
     {
         reward.onClickDo += OnClickDo;
     }
