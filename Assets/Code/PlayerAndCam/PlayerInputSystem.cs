@@ -12,16 +12,20 @@ public class PlayerInputSystem : MonoBehaviour
     public WorldFurniture furnitureINeedRemember;
     public GameObject pot;
     public WorldPot potINeedRemember;
-    private ItemData onClickItem;
     public GameObject item;
     public WorldItem itemINeedRemember;
+    public GameObject door;
+    public WorldDoor doorINeedRemember;
     public event Action Interact;
     public event Action<ItemData, GameObject> onSow;
     public event Action<ItemData> onItemTake;
     public event Action<int> whenIOpen;
+    public event Action WhenIOpenDoor;
+    private ItemData onClickItem;
     public bool isLookingBox;
     public bool isLookingPot;
     public bool isLookingItem;
+    public bool iSeeExit;
     public int howMuchBoxIOpen = 0;
     void Start()
     {
@@ -36,6 +40,7 @@ public class PlayerInputSystem : MonoBehaviour
         isLookingBox = false;
         isLookingPot = false;
         isLookingItem = false;
+        iSeeExit = false;
         if (Physics.Raycast(ray, out hit, rayLength))
         {
             if (hit.collider.GetComponent<WorldFurniture>())
@@ -59,6 +64,15 @@ public class PlayerInputSystem : MonoBehaviour
                 itemINeedRemember = item.GetComponent<WorldItem>();
                 isLookingItem = true;
             }
+            if (hit.collider.GetComponent<WorldDoor>())
+            {
+                door = hit.collider.gameObject;
+                doorINeedRemember = door.GetComponent<WorldDoor>();
+                if(doorINeedRemember.door.iCanOpen == true && doorINeedRemember.youCanOpenMe == true)
+                {
+                    iSeeExit = true;
+                }
+            }
         }
         if (pressedE && isLookingBox && furnitureINeedRemember != null && furnitureINeedRemember.imNotOpenYet == true)
         {
@@ -73,6 +87,10 @@ public class PlayerInputSystem : MonoBehaviour
         if (pressedE && potINeedRemember != null && potINeedRemember.youCanWorkWithMe == true)
         {
             onSow?.Invoke(playerP.itemData, pot);
+        }
+        if(pressedE && iSeeExit)
+        {
+            WhenIOpenDoor?.Invoke();
         }
     }
     public void OnClickDo(ItemData items)

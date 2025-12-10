@@ -1447,9 +1447,12 @@ MonoBehaviour:
   potINeedRemember: {fileID: 0}
   item: {fileID: 0}
   itemINeedRemember: {fileID: 0}
+  door: {fileID: 0}
+  doorINeedRemember: {fileID: 0}
   isLookingBox: 0
   isLookingPot: 0
   isLookingItem: 0
+  iSeeExit: 0
   howMuchBoxIOpen: 0
 --- !u!95 &791211474 stripped
 Animator:
@@ -1614,6 +1617,7 @@ MonoBehaviour:
   progressCount: 0
   finallCount: 13
   index: 0
+  iCantFindExit: 1
 --- !u!4 &976750256
 Transform:
   m_ObjectHideFlags: 0
@@ -2582,6 +2586,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653225492}
   m_CullTransparentMesh: 1
+--- !u!1 &1700604046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1217024961851829757, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
+  m_PrefabInstance: {fileID: 4946454910646715229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1798307724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8661899623909309734, guid: ded4833ed4aaf1b4ebc51f1b8948ccbd, type: 3}
@@ -3348,13 +3357,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1217024961851829757, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4946454910646715234}
   m_SourcePrefab: {fileID: 100100000, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
 --- !u!4 &4946454910646715230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992963152970938183, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
   m_PrefabInstance: {fileID: 4946454910646715229}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4946454910646715234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700604046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33178cfa1b942e14b894078392c80e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldDoor
+  door: {fileID: 11400000, guid: 8bcdfcae1f0705c4ca52505bf03814b7, type: 2}
+  Quests: {fileID: 976750255}
+  player: {fileID: 791211473}
+  myDistance: 0
+  youCanOpenMe: 0
 --- !u!1001 &6023848951086727126
 PrefabInstance:
   m_ObjectHideFlags: 0

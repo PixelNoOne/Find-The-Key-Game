@@ -17,6 +17,7 @@ public class QuestsManager : MonoBehaviour
     public event Action<string> onQuestStarted;
     public event Action<int, int> onRewardProgress;
     public event Action onFirstQuestFinished;
+    public bool iCantFindExit = true;
 
     void Start()
     {
@@ -56,8 +57,8 @@ public class QuestsManager : MonoBehaviour
         if (item == items)
         {
             data.QuestKey[index] = true;
+            iCantFindExit = false;
             index++;
-            onQuestStarted?.Invoke(data.Quests[index]);
         }
         else
         {

@@ -11,7 +11,7 @@ public class WorldPot : MonoBehaviour
 
     void Update()
     {
-        if (player.potINeedRemember != null && PotData == player.potINeedRemember.PotData)
+        if (player != null && player.potINeedRemember != null && PotData == player.potINeedRemember.PotData)
         {
             myDistance = Vector3.Distance(transform.position, player.transform.position);
             if (myDistance <= player.distanceToTake)
