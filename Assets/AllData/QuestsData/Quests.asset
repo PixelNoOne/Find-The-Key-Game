@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Quests
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   Quests:
-  - you need open all furniture
-  - sow seed in pot on table
-  - please wait all sow stage
-  - take a key
-  - you can go, you now where is door
+  - I need to find the key, but i forgot where i put it.
+  - Where did this pot come from? Maybe i should interact with it.
+  - it needs time to grow
+  - Here is the key!
+  - Now we can leave.
   QuestKey: 0101010100
-  rewardText: Congrats you can take your reward now
+  rewardText: I only found some strange seed. Well, since i still can't get out of
+    here, maybe I should put it to some use?
   itemReward: {fileID: 11400000, guid: 9e50b8811b2020b4cb2ffe94fab7110b, type: 2}
