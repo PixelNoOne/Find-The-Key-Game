@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerInputSystem : MonoBehaviour
 {
+    private MeshRenderer mesh;
+    public Material outline;
     public PlayerPocket playerP;
     public RewardUi reward;
     public Transform hand;
@@ -41,6 +43,12 @@ public class PlayerInputSystem : MonoBehaviour
         isLookingPot = false;
         isLookingItem = false;
         iSeeExit = false;
+        if(furniture != null && mesh != null)
+        {
+            var matArray = mesh.materials;
+            matArray[1] = null;
+            mesh.materials = matArray;
+        }
         if (Physics.Raycast(ray, out hit, rayLength))
         {
             if (hit.collider.GetComponent<WorldFurniture>())
@@ -50,6 +58,11 @@ public class PlayerInputSystem : MonoBehaviour
                 if (furnitureINeedRemember.youCanOpen == true)
                 {
                     isLookingBox = true;
+                    mesh = furniture.GetComponent<MeshRenderer>();
+                    var matArray = mesh.materials;
+                    matArray[1] = outline;
+                    mesh.materials = matArray;
+                    Debug.Log("I steel work");
                 }
             }
             if (hit.collider.GetComponent<WorldPot>())

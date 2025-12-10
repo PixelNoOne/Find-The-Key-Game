@@ -14,13 +14,14 @@ public class WorldFurniture : MonoBehaviour
     void Start()
     {
         player.Interact += Interact;
+        imNotOpenYet = true;
     }
     void Update()
     {
-        if (player.furniture != null && player.furnitureINeedRemember.data != null && data == player.furnitureINeedRemember.data) 
+        if (player.furniture != null && player.furnitureINeedRemember.data != null && data == player.furnitureINeedRemember.data)
         {
-            myDistance = Vector3.Distance(transform.position,player.transform.position);
-            if (myDistance <= player.distanceToTake)
+            myDistance = Vector3.Distance(transform.position, player.transform.position);
+            if (myDistance <= player.distanceToTake && imNotOpenYet == true)
             {
                 youCanOpen = true;
             }
@@ -29,6 +30,7 @@ public class WorldFurniture : MonoBehaviour
                 youCanOpen = false;
             }
         }
+        
         if (youNeedOpen && myOpenVector)
         {
             transform.localPosition = Vector3.Lerp(transform.localPosition, data.VectorOpen.openPosition, speed * Time.deltaTime);
