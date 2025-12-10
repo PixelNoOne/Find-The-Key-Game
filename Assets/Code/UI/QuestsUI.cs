@@ -7,7 +7,7 @@ public class QuestsUI : MonoBehaviour
     public TMP_Text progressStatus;
     public QuestsManager Quests;
 
-    void Start()
+    void Awake()
     {
         Quests.onFirstQuestFinished += OffText;
         Quests.onQuestStarted += UpdateQuest;

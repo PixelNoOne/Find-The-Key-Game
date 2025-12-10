@@ -18,6 +18,6 @@ MonoBehaviour:
   - please wait all sow stage
   - please wait all sow stage
   - take a key and you can go, you now where is door
-  QuestKey: 0000000000
-  reward: Congrats you can take your rewards!
+  QuestKey: 0101010000
+  rewardText: Congrats you can take your reward now
   itemReward: {fileID: 11400000, guid: 9e50b8811b2020b4cb2ffe94fab7110b, type: 2}

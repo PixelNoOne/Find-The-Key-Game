@@ -20,7 +20,7 @@ public class SowManager : MonoBehaviour
     }
     public void Interact(ItemData item, GameObject pot)
     {
-        if(item.seedData != null)
+        if(item != null && item.seedData != null)
         {
             plant = Instantiate(item.plantPreFab);
             plant.transform.position = pot.transform.position + Vector3.up * 0.55f;
