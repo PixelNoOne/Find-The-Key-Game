@@ -23,8 +23,8 @@ public class QuestsManager : MonoBehaviour
     void Awake()
     {
         sow.iCreatedSeedSow += isSeedCreated;
-        player.whenIOpen += ITakeInt;
         sow.onSowed += Sowed;
+        player.whenIOpen += ITakeInt;
         playerP.onItemPickUp += keyPickUp;
     }
     void Start()
@@ -43,9 +43,8 @@ public class QuestsManager : MonoBehaviour
         {
             data.QuestKey[index] = true;
             onFirstQuestFinished?.Invoke();
-            Instantiate(pot);
-            pot.transform.position = placeToPot.transform.position;
-            worldPot = pot.GetComponent<WorldPot>();
+            placeToPot = Instantiate(pot);
+            worldPot = placeToPot.GetComponent<WorldPot>();
             worldPot.player = player;
             index++;
             onQuestStarted?.Invoke(data.Quests[index]);
