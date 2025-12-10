@@ -62,7 +62,6 @@ public class PlayerInputSystem : MonoBehaviour
                     var matArray = mesh.materials;
                     matArray[1] = outline;
                     mesh.materials = matArray;
-                    Debug.Log("I steel work");
                 }
             }
             if (hit.collider.GetComponent<WorldPot>())
