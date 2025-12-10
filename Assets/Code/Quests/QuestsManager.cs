@@ -8,6 +8,9 @@ public class QuestsManager : MonoBehaviour
     public ItemData item;
     public SowManager sow;
     public QuestData data;
+    public GameObject pot;
+    public GameObject placeToPot;
+    public WorldPot worldPot;
     public int progressCount;
     public int finallCount = 13;
     public int index = 0;
@@ -34,6 +37,10 @@ public class QuestsManager : MonoBehaviour
         {
             data.QuestKey[index] = true;
             onFirstQuestFinished?.Invoke();
+            Instantiate(pot);
+            pot.transform.position = placeToPot.transform.position;
+            worldPot = pot.GetComponent<WorldPot>();
+            worldPot.player = player;
             index++;
             onQuestStarted?.Invoke(data.Quests[index]);
         }

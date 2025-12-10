@@ -9,9 +9,10 @@ public class SowManager : MonoBehaviour
     private GameObject plant;
     public PlayerInputSystem player;
     public PlayerPocket playerP;
-    public SeedSow SeedSow;
+    public SeedSow seedSow;
     public bool seedIsSowed = false;
     public event Action<bool> onSowed;
+    public event Action<SeedSow> iCreatedSeedSow;
     
     void Start()
     {
@@ -24,8 +25,9 @@ public class SowManager : MonoBehaviour
             plant = Instantiate(item.plantPreFab);
             plant.transform.position = pot.transform.position + Vector3.up * 0.55f;
             plant.transform.rotation = Quaternion.identity;
-            SeedSow = plant.GetComponent<SeedSow>();
-            SeedSow.seedData = item.seedData;
+            seedSow = plant.GetComponent<SeedSow>();
+            iCreatedSeedSow?.Invoke(seedSow);
+            seedSow.seedData = item.seedData;
             Destroy(playerP.itemInHand);
             playerP.itemInHand = null;
             seedIsSowed = true;

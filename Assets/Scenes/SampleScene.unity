@@ -280,6 +280,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f3f439e9e571440b3035f98a048f6d, type: 3}
+--- !u!1 &155521285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155521286}
+  m_Layer: 0
+  m_Name: placeToPot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155521286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155521285}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7014789248270163176}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &166736695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1577,6 +1608,9 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 82d7917ade3bf054e9de453d9713b3a9, type: 2}
   sow: {fileID: 207328000}
   data: {fileID: 11400000, guid: de15f900894b0f344ab892475e7edf79, type: 2}
+  pot: {fileID: 1729568993151567619, guid: 06e96b0f29bc7964396b2acd94e0b09f, type: 3}
+  placeToPot: {fileID: 0}
+  worldPot: {fileID: 0}
   progressCount: 0
   finallCount: 13
   index: 0
@@ -3543,7 +3577,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 379033de317bd644f95942bb989a07c9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3278996957329020506, guid: 75052748a8df9454a89eabf82897a6ae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 155521286}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75052748a8df9454a89eabf82897a6ae, type: 3}
 --- !u!4 &7014789248270163176 stripped

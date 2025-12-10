@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class SeedSow : MonoBehaviour
     public SeedData seedData;
     public ItemData item;
     public GameObject stage;
-    [SerializeField] private GameObject key;
+    public event Action WhenIGrow;
     public int growthAndGrowthTaimStage = 0;
 
     void Start()
@@ -25,9 +26,14 @@ public class SeedSow : MonoBehaviour
             {
                 Destroy(stage);
             }
+            else
+            {
+                break;
+            }
             growthAndGrowthTaimStage++;
             stage = Instantiate(seedData.growthStage[growthAndGrowthTaimStage]);
             stage.transform.position = transform.position;
         }
+        WhenIGrow?.Invoke();
     }
 }

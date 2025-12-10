@@ -11,7 +11,7 @@ public class WorldItem : MonoBehaviour
 
     void Update()
     {
-        if (youCanTakeMe)
+        if (youCanTakeMe && player != null)
         {
             myDistance = Vector3.Distance(transform.position,player.transform.position);
             if (myDistance <= player.distanceToTake)
