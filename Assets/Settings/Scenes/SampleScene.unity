@@ -2898,6 +2898,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 791211473}
+    - target: {fileID: 7787104997803624179, guid: 1d03d1210e09a6d4f9170257ac9dafdd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f3278087e7f25b458fe2765555f7176, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3551,6 +3555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dresser_Box1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388064229219000608, guid: a5e26ff18546f5e45b4a998412ca460c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f3278087e7f25b458fe2765555f7176, type: 2}
     - target: {fileID: 8813096440801051890, guid: a5e26ff18546f5e45b4a998412ca460c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5490053
@@ -4184,7 +4192,7 @@ PrefabInstance:
     - target: {fileID: 4272707911480344010, guid: 4adf0aa73fb9c2f4aa2eb203d756f7ce, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 379033de317bd644f95942bb989a07c9, type: 2}
+      objectReference: {fileID: 2100000, guid: 5f3278087e7f25b458fe2765555f7176, type: 2}
     - target: {fileID: 5226798615740275793, guid: 4adf0aa73fb9c2f4aa2eb203d756f7ce, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
