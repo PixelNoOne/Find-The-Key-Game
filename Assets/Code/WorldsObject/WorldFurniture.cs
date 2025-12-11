@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WorldFurniture : MonoBehaviour
@@ -10,7 +11,7 @@ public class WorldFurniture : MonoBehaviour
     public bool youNeedOpen = false;
     public float myDistance = 0f;
     public bool youCanOpen = false;
-
+    public bool iAmBox;
     void Start()
     {
         player.Interact += Interact;
@@ -40,9 +41,6 @@ public class WorldFurniture : MonoBehaviour
         {
             transform.localRotation = Quaternion.Lerp(transform.localRotation,data.EulerOpen.openRotation,speed * Time.deltaTime);
             imNotOpenYet = false;
-        }
-        {
-            
         }
     }
     public void Interact()

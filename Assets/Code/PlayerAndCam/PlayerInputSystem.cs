@@ -23,6 +23,9 @@ public class PlayerInputSystem : MonoBehaviour
     public event Action<ItemData> onItemTake;
     public event Action<int> whenIOpen;
     public event Action WhenIOpenDoor;
+    public event Action onVectorBoxOpen;
+    public event Action onEulerBoxOpen;
+    public event Action onCartonBoxOpen;
     private ItemData onClickItem;
     public bool isLookingBox;
     public bool isLookingPot;
@@ -94,6 +97,9 @@ public class PlayerInputSystem : MonoBehaviour
             Interact?.Invoke();
             howMuchBoxIOpen++;
             whenIOpen?.Invoke(howMuchBoxIOpen);
+            if(furnitureINeedRemember.myOpenVector) onVectorBoxOpen?.Invoke();
+            if(!furnitureINeedRemember.myOpenVector && !furnitureINeedRemember.iAmBox) onEulerBoxOpen?.Invoke();
+            if (!furnitureINeedRemember.myOpenVector && furnitureINeedRemember.iAmBox) onCartonBoxOpen?.Invoke();
         }
         if (pressedE && isLookingItem && item != null)
         {

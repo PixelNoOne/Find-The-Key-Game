@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,8 @@ public class Move : MonoBehaviour
     [SerializeField] private float speed = 6f;
     [SerializeField] private float gravity = 15f;
     [SerializeField] private float verticalVelocity;
+    public event Action iWalking;
+    public event Action iStay;
     public CharacterController controller;
     public RewardUi reward;
     Animator animator;
@@ -38,6 +41,14 @@ public class Move : MonoBehaviour
             controller.Move(moveControll);
             bool iWalk = moveXZ.magnitude > 0.1f;
             animator.SetBool("iWalk", iWalk);
+            if(animator.GetBool("iWalk") == true)
+            {
+                iWalking?.Invoke();
+            }
+            else
+            {
+                iStay?.Invoke();
+            }
         }
     }
 }
