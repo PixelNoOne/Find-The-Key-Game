@@ -134,7 +134,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 
 Вариант 2
 1. Скачайте билд:
-[Скачать Windows Build](https://github.com/PixelNoOne/Find-The-Key-Game/releases/download/v1.0/FindTheKey.zip)
+[Скачать Windows Build](https://github.com/PixelNoOne/Find-The-Key-Game/releases/tag/v1.0/FindTheKey.zip)
 2. Распакуйте архив и запустите ехе файл.
 ---
 
