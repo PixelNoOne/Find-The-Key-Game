@@ -131,6 +131,11 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 4. Press **Play**
 5. WASD to move, E to interact.
 
+Вариант 2
+1. Download the build:
+[Download Windows Build](https://github.com/PixelNoOne/Find-The-Key-Game/releases/download/v1.0/FindTheKey.zip)
+2. Unzip the archive and run the exe file.
+
 ---
 
 ##  Team — GDebug Studio 
