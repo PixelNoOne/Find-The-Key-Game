@@ -147,7 +147,10 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 
 ##  Иллюстрации и видео
 
+<img width="1920" height="1080" alt="Image_5" src="https://github.com/user-attachments/assets/7fe572d4-8d9e-4ad2-9a6e-5f274636ad9f" />
 <img width="1920" height="1080" alt="Image_3" src="https://github.com/user-attachments/assets/6fbc11d6-f3cd-443d-8fd9-65cab2e513d4" />
 <img width="1920" height="1080" alt="Image_1" src="https://github.com/user-attachments/assets/9ade5202-e0f7-48d4-9da5-4419566fdd0e" />
-<img width="1920" height="1080" alt="Image_5" src="https://github.com/user-attachments/assets/7fe572d4-8d9e-4ad2-9a6e-5f274636ad9f" />
 
+![Gif_1_Outline](https://github.com/user-attachments/assets/5256b5da-9fd6-4a46-a420-aee46c460a75)
+![Gif_2_Progress](https://github.com/user-attachments/assets/670937c9-7c26-45b4-8a3e-8cf904f0d7e7)
+![Gif_3_Grow](https://github.com/user-attachments/assets/03b021f7-fa80-4f1b-bfe4-439a0026d23d)
