@@ -5,7 +5,6 @@ using UnityEngine;
 public class QuestData : ScriptableObject
 {
     public string[] Quests;
-    public bool[] QuestKey;
     public string rewardText;
     public ItemData itemReward;
 }

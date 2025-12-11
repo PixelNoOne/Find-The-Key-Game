@@ -41,7 +41,6 @@ public class QuestsManager : MonoBehaviour
         }
         else
         {
-            data.QuestKey[index] = true;
             onFirstQuestFinished?.Invoke();
             placeToPot = Instantiate(pot);
             worldPot = placeToPot.GetComponent<WorldPot>();
@@ -52,7 +51,6 @@ public class QuestsManager : MonoBehaviour
     }
     public void Sowed(bool sow)
     {
-        data.QuestKey[index] = true;
         index++;
         onQuestStarted?.Invoke(data.Quests[index]);
     }
@@ -63,7 +61,6 @@ public class QuestsManager : MonoBehaviour
     }
     public void WhenSowed()
     {
-        data.QuestKey[index] = true;
         index++;
         onQuestStarted?.Invoke(data.Quests[index]);
     }
@@ -71,7 +68,6 @@ public class QuestsManager : MonoBehaviour
     {
         if (item == items)
         {
-            data.QuestKey[index] = true;
             iCantFindExit = false;
             index++;
             onQuestStarted?.Invoke(data.Quests[index]);
