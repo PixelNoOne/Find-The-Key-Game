@@ -66,6 +66,8 @@ This system is the **bridge** between the player and all interactable elements.
 Modular behaviour for all furniture types (wardrobe, chest, drawers).  
 Each object follows the same interaction pattern but has its own animation and logic.
 
+![Gif_1_Outline](https://github.com/user-attachments/assets/7b21a4d6-9759-4883-b2d5-f33d4b27a04f)
+
 **Key responsibilities:**  
 - Plays open/close animations  
 - Controls interaction availability  
@@ -78,6 +80,8 @@ Scalable: new furniture types can be added without modifying PlayerInputSystem.
 
 ### **3. SowManager (Planting System)**  
 Responsible for creating the planting point and handing control to the growth system (SeedSow).
+
+![Gif_3_Grow](https://github.com/user-attachments/assets/802356af-78f3-4a14-b365-22fad5c58c55)
 
 **Key responsibilities:**  
 - Subscribes to the `onSow` event from PlayerInputSystem  
@@ -92,6 +96,8 @@ SowManager serves as a lightweight connector, keeping planting modular while del
 
 ### **4. QuestManager**
 Central controller for linear quest progression.
+
+![Gif_2_Progress](https://github.com/user-attachments/assets/58dca869-b099-4400-9115-f92e457ae660)
 
 **Key responsibilities:**  
 - Loads quest data via ScriptableObjects  
@@ -116,13 +122,14 @@ This system binds together all gameplay loops.
 | Assets | Custom 3D models & audio created by our team |
 
 ---
-##  How to Run
+##  How to Run and play
 
 1. Clone the repository:
 git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 2. Open in **Unity 6.3 LTS**  
 3. Open the scene **SampleScene**  
 4. Press **Play**
+5. WASD to move, E to interact.
 
 ---
 
@@ -132,7 +139,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 |------|------|
 | Developer | PixelNoOne |
 | Artist | HokageRin |
-| Music Composer | Thule's Veil |
+| Sound designer | Thule's Veil |
 
 ---
 
@@ -142,3 +149,11 @@ This project is provided **for evaluation purposes only**.
 All scripts, assets, models, and audio belong to the project authors and **may not be reused or redistributed** without explicit permission.
 
 Full license text is available in the `LICENSE` file.
+
+---
+
+##  illustrations
+
+<img width="1920" height="1080" alt="Image_5" src="https://github.com/user-attachments/assets/7fe572d4-8d9e-4ad2-9a6e-5f274636ad9f" />
+<img width="1920" height="1080" alt="Image_3" src="https://github.com/user-attachments/assets/6fbc11d6-f3cd-443d-8fd9-65cab2e513d4" />
+<img width="1920" height="1080" alt="Image_1" src="https://github.com/user-attachments/assets/9ade5202-e0f7-48d4-9da5-4419566fdd0e" />
