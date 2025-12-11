@@ -12,12 +12,14 @@
 - Открытие и закрытие мебели  
 - Подсветка объектов через дополнительный материал  
 - Проверка дистанции до объекта  
+![Gif_1_Outline](https://github.com/user-attachments/assets/04ba4945-c53b-420f-a10c-48d8dcd83e2e)
 
 ###  Система посадки семян
 - Посадка семян в горшки  
 - Проверка направления и расстояния  
 - Создание новых объектов  
 - Обновление прогресса награды  
+![Gif_3_Grow](https://github.com/user-attachments/assets/4b617463-e4ce-4b67-b5e5-e813a1bf3e59)
 
 ###  Квестовая система
 - Данные квестов на ScriptableObject  
@@ -27,6 +29,7 @@
   - `OnFirstQuestFinished`
   - `OnRewardProgress`
 - Автоматический переход к следующему квесту  
+![Gif_2_Progress](https://github.com/user-attachments/assets/d273efff-fc1a-4a39-9140-f58feea27423)
 
 ###  Система награды
 - Появление ключевого предмета после выполнения всех шагов  
@@ -151,6 +154,3 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 <img width="1920" height="1080" alt="Image_3" src="https://github.com/user-attachments/assets/6fbc11d6-f3cd-443d-8fd9-65cab2e513d4" />
 <img width="1920" height="1080" alt="Image_1" src="https://github.com/user-attachments/assets/9ade5202-e0f7-48d4-9da5-4419566fdd0e" />
 
-![Gif_1_Outline](https://github.com/user-attachments/assets/5256b5da-9fd6-4a46-a420-aee46c460a75)
-![Gif_2_Progress](https://github.com/user-attachments/assets/670937c9-7c26-45b4-8a3e-8cf904f0d7e7)
-![Gif_3_Grow](https://github.com/user-attachments/assets/03b021f7-fa80-4f1b-bfe4-439a0026d23d)
