@@ -124,6 +124,7 @@ This system binds together all gameplay loops.
 ---
 ##  How to Run and play
 
+Option 1
 1. Clone the repository:
 git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 2. Open in **Unity 6.3 LTS**  
@@ -131,7 +132,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 4. Press **Play**
 5. WASD to move, E to interact.
 
-Вариант 2
+Option 2
 1. Download the build:
 [Download Windows Build](https://github.com/PixelNoOne/Find-The-Key-Game/releases/download/v1.0/FindTheKey.zip)
 2. Unzip the archive and run the exe file.
