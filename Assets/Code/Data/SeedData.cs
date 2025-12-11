@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [CreateAssetMenu(fileName = "SeedData", menuName = "Scriptable Objects/SeedData")]
 public class SeedData : ScriptableObject

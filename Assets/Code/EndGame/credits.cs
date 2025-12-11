@@ -18,6 +18,5 @@ public class credit : MonoBehaviour
         clip.Stop();
         song.Stop();
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
