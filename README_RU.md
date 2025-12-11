@@ -122,14 +122,14 @@ SowManager выполняет минимальную связующую логи
 
 ---
 
-##  Как запустить проект
+##  Как запустить проект и играть
 
 1. Клонируйте репозиторий:
 git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 2. Откройте проект в **Unity 6.3 LTS**  
 3. Откройте сцену **SampleScene**  
 4. Нажмите **Play**  
-
+5. Управление осуществляется на **WASD**, взаимодействие на кнопку **E**.
 ---
 
 ##  Команда — GDebug Studio
@@ -138,7 +138,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 |------|-------|
 | Разработчик | PixelNoOne |
 | Художник | HokageRin |
-| Музыка | Thule's Veil |
+| Саунд-дизайнер | Thule's Veil |
 
 ---
 
@@ -151,7 +151,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 
 ---
 
-##  Иллюстрации и видео
+##  Иллюстрации
 
 <img width="1920" height="1080" alt="Image_5" src="https://github.com/user-attachments/assets/7fe572d4-8d9e-4ad2-9a6e-5f274636ad9f" />
 <img width="1920" height="1080" alt="Image_3" src="https://github.com/user-attachments/assets/6fbc11d6-f3cd-443d-8fd9-65cab2e513d4" />
