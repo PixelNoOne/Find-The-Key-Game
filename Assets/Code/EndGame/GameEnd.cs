@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -5,6 +7,7 @@ using UnityEngine.Video;
 public class GameEnd : MonoBehaviour
 {
     public PlayerInputSystem player;
+    public event Action onDoorOpen;
 
     void Start()
     {
@@ -12,6 +15,12 @@ public class GameEnd : MonoBehaviour
     }
     public void gameEnded()
     {
+        onDoorOpen?.Invoke();
+        StartCoroutine(WaitForEnd());
+    }
+    IEnumerator WaitForEnd()
+    {
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("EndGameScene");
     }
 }
