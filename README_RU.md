@@ -122,14 +122,20 @@ SowManager выполняет минимальную связующую логи
 
 ---
 
-##  Как запустить проект и играть
+##  Как запустить проект и играть 
 
+Вариант 1
 1. Клонируйте репозиторий:
 git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 2. Откройте проект в **Unity 6.3 LTS**  
 3. Откройте сцену **SampleScene**  
 4. Нажмите **Play**  
 5. Управление осуществляется на **WASD**, взаимодействие на кнопку **E**.
+
+Вариант 2
+1. Скачайте билд:
+[Скачать Windows Build](https://github.com/PixelNoOne/Find-The-Key-Game/releases/download/v1.0/FindTheKey.zip)
+2. Распакуйте архив и запустите ехе файл.
 ---
 
 ##  Команда — GDebug Studio
