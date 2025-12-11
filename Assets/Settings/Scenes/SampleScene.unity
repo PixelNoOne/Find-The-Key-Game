@@ -3261,7 +3261,7 @@ PrefabInstance:
     - target: {fileID: 6193628836028034967, guid: ded4833ed4aaf1b4ebc51f1b8948ccbd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 379033de317bd644f95942bb989a07c9, type: 2}
+      objectReference: {fileID: 2100000, guid: 5ae93401b34e7ed4aaef75f4c9db5f69, type: 2}
     - target: {fileID: 6277084367017199549, guid: ded4833ed4aaf1b4ebc51f1b8948ccbd, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
@@ -3529,6 +3529,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5830200219355060853, guid: 7c57997b8a4536041ac4267f32406ed6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ae93401b34e7ed4aaef75f4c9db5f69, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3726,7 +3730,7 @@ PrefabInstance:
     - target: {fileID: 856600582651743272, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7cdf9dbb44d76064482201a19c488f69, type: 2}
+      objectReference: {fileID: 2100000, guid: df0fb77aa2fd5844c9aafef320a9c988, type: 2}
     - target: {fileID: 1217024961851829757, guid: 867a1bce534602b448af31452b0a2fdc, type: 3}
       propertyPath: m_Name
       value: MainDoor
@@ -4019,6 +4023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rack_BoxL
       objectReference: {fileID: 0}
+    - target: {fileID: 3960655625180815660, guid: 325f45afdfafeb24a94fda5d509e9d51, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ae93401b34e7ed4aaef75f4c9db5f69, type: 2}
     - target: {fileID: 8022466168132685310, guid: 325f45afdfafeb24a94fda5d509e9d51, type: 3}
       propertyPath: player
       value: 
@@ -4115,6 +4123,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 791211473}
+    - target: {fileID: 2442356968328414545, guid: 32f18c356221a5343a28c9bd5c9d2904, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ae93401b34e7ed4aaef75f4c9db5f69, type: 2}
     - target: {fileID: 2574289537528625074, guid: 32f18c356221a5343a28c9bd5c9d2904, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.575139
@@ -4895,6 +4907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5034504175325187420, guid: 456089c94bca0814cad478edb291038b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5ae93401b34e7ed4aaef75f4c9db5f69, type: 2}
     - target: {fileID: 7581037449493462273, guid: 456089c94bca0814cad478edb291038b, type: 3}
       propertyPath: m_Name
       value: Rack_Box1
