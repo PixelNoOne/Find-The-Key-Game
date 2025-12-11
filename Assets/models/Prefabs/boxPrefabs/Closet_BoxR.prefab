@@ -69,7 +69,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 687e90febb5e2ae4a8eee23d7ca98f88, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 687e90febb5e2ae4a8eee23d7ca98f88, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,3 +134,4 @@ MonoBehaviour:
   youNeedOpen: 0
   myDistance: 0
   youCanOpen: 0
+  iAmBox: 0

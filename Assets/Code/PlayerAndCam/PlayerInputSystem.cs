@@ -5,6 +5,7 @@ public class PlayerInputSystem : MonoBehaviour
 {
     private MeshRenderer mesh;
     public Material outline;
+    public Material myMat;
     public PlayerPocket playerP;
     public RewardUi reward;
     public Transform hand;
@@ -49,7 +50,8 @@ public class PlayerInputSystem : MonoBehaviour
         if(furniture != null && mesh != null)
         {
             var matArray = mesh.materials;
-            matArray[1] = null;
+            myMat = matArray[0];
+            matArray[1] = myMat;
             mesh.materials = matArray;
         }
         if (Physics.Raycast(ray, out hit, rayLength))
