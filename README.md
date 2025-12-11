@@ -132,7 +132,7 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 |------|------|
 | Developer | PixelNoOne |
 | Artist | HokageRin |
-| Music Composer | Vanishhe |
+| Music Composer | Thule's Veil |
 
 ---
 
