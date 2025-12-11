@@ -142,3 +142,12 @@ git clone https://github.com/PixelNoOne/Find-The-Key-Game.git
 Все скрипты, модели, аудио и ассеты принадлежат авторам проекта и **не могут быть использованы или переработаны** без явного разрешения.
 
 Полный текст лицензии — в файле `LICENSE`.
+
+---
+
+##  Иллюстрации и видео
+
+<img width="1920" height="1080" alt="Image_3" src="https://github.com/user-attachments/assets/6fbc11d6-f3cd-443d-8fd9-65cab2e513d4" />
+<img width="1920" height="1080" alt="Image_1" src="https://github.com/user-attachments/assets/9ade5202-e0f7-48d4-9da5-4419566fdd0e" />
+<img width="1920" height="1080" alt="Image_5" src="https://github.com/user-attachments/assets/7fe572d4-8d9e-4ad2-9a6e-5f274636ad9f" />
+
