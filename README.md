@@ -1,5 +1,6 @@
 # 🎮 Find The Key — Unity Gameplay Prototype
 **English** | [Русская версия](README_RU.md)
+
 **Find The Key** is a small first-person gameplay prototype built in **2 days** to demonstrate core gameplay systems, clean event-driven architecture, interaction mechanics, and UI logic.  
 The project serves as a portfolio piece for game development positions.
 
